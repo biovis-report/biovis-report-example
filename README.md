@@ -4,6 +4,8 @@
 
 ```
 git clone https://github.com/biovis-report/biovis-report-example.git
+
+cd biovis-report-example
 ```
 
 ## Step2: Configuration
@@ -13,7 +15,8 @@ Install all the dependencies.
 ### Create an new environment
 
 ```bash
-conda create -n biovis-report python=3.8
+# It is recommended to install Python 3.8, and don't forget to specify the biovis-report and conda-forge channels please.
+conda create -c biovis-report -c conda-forge -n biovis-report python=3.8 biovis-report biovis-media-extension
 ```
 
 ### Activate the conda environment
@@ -22,15 +25,10 @@ conda create -n biovis-report python=3.8
 conda activate biovis-report
 ```
 
-### Install the core packages (pip/conda)
+### Install the plugins
 
 ```bash
-# use pip
-conda activate biovis-report
-pip3 install biovis-report biovis-media-extension
-
-# use conda
-conda install -c biovis-report -c conda-forge biovis-report biovis-media-extension
+conda install -c biovis-report -c conda-forge biovis-base-plugins pie-chart-js lollipop-plot-r
 ```
 
 ### Test whether the biovis-report is working.
@@ -39,19 +37,10 @@ conda install -c biovis-report -c conda-forge biovis-report biovis-media-extensi
 biovis-report --help
 ```
 
-### Install the plugins
-
-```bash
-# Base plugin package
-conda install -c biovis-report -c conda-forge biovis-base-plugins
-
-# More plugins
-conda install -c biovis-report -c conda-forge <plugin-name>
-```
-
 ### Launch the biovis-report development server
 
 ```bash
+mkdir output
 biovis-report report -p ./output -t ./example -e -f --theme biovis_mkdocs --dev-addr 0.0.0.0:8023
 ```
 
