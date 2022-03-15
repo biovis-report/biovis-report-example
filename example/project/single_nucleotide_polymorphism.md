@@ -1,4 +1,4 @@
-## Genomic Alternations
+## Genomic Alterations
 
 ### Non-synonymous mutation frequency by mRNA subtype
 

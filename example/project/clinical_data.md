@@ -6,12 +6,12 @@ Primary tumor tissue and blood samples were obtained from 504 consecutive female
 
 ### Clinical Data Table
 
-@data-table-js(dataUrl='./example/data/meta_and_clinical_data_table_short_c8.csv', enableItemSearch=True)
+@data-table-js(dataUrl='./example/data/data_clinical_patient.csv', enableItemSearch=True)
 
 ### Pivot Table for Clinical Data
 
-@pivot-table-js(dataUrl='./example/data/meta_and_clinical_data_table_short_c8.csv', enableLocal=True)
+@pivot-table-js(dataUrl='./example/data/data_clinical_patient.csv', enableLocal=True)
 
 ### View Relationship across Clinical Variables
 
-@scatter-plot()
+@scatter-plot(dataFile="./example/data/data_clinical_patient.csv", dataType='csv', xAxis='RFS_time_Days', yAxis='HRD')
