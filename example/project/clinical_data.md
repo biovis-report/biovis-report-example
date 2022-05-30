@@ -6,7 +6,7 @@ Primary tumor tissue and blood samples were obtained from 504 consecutive female
 
 ### Clinical Data Table
 
-@data-table-js(dataUrl='./example/data/data_clinical_patient.csv', enableItemSearch=True)
+@datatable-js(dataUrl='./example/data/data_clinical_patient.csv', enableItemSearch=True)
 
 ### Pivot Table for Clinical Data
 
@@ -14,4 +14,4 @@ Primary tumor tissue and blood samples were obtained from 504 consecutive female
 
 ### View Relationship across Clinical Variables
 
-@scatter-plot(dataFile="./example/data/data_clinical_patient.csv", dataType='csv', xAxis='RFS_time_Days', yAxis='HRD')
+@scatter-plot-r(dataFile="./example/data/data_clinical_patient.csv", dataType='csv', xAxis='RFS_time_Days', yAxis='HRD')

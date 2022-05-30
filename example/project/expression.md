@@ -8,11 +8,11 @@ The tumors samples were classified into 4 separate subtypes using unsupervised k
 
 The description for gene expression matrix.
 
-@group-boxplot(dataFile='./example/data/tnbcexpmelt1_tp53.rds', dataType='rds',xAxis='Group', yAxis='Value')
+@grouped-boxplot-r(dataFile='./example/data/tnbcexpmelt1_tp53.rds', dataType='rds',xAxis='Group', yAxis='Value')
 
 
-@group-boxplot(dataFile='./example/data/tnbcexpmelt_top19.rds', dataType='rds',xAxis='Group', yAxis='Value')
+@grouped-boxplot-r(dataFile='./example/data/tnbcexpmelt_top19.rds', dataType='rds',xAxis='Group', yAxis='Value')
 
 ### Heatmap
 
-@heatmap-d3(dataFile='./example/data/tnbcexp_20_m0sd1_heatmap.rds', dataType='rds')
+@heatmap-d3-r(dataFile='./example/data/tnbcexp_20_m0sd1_heatmap.rds', dataType='rds')
