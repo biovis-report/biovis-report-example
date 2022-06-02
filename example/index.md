@@ -1,7 +1,3 @@
-<!--note C:\Users\YY\Documents\working\choppy_report\report will be automatically updated. donot put useful files there!  -->
-
-<!-- http://127.0.0.1:8080/ -->
-
 ## **Chinese Triple-Negative Breast Cancer Cohort**
 
 ### **Description**

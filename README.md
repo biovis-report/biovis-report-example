@@ -1,5 +1,7 @@
 # Example
 
+Please access the [BioVisReport Docs Website](https://biovis.report) for more details
+
 ## Step1: Clone the example repo
 
 ```
@@ -16,7 +18,7 @@ Install all the dependencies.
 
 ```bash
 # It is recommended to install Python 3.8, and don't forget to specify the biovis-report and conda-forge channels please.
-conda create -c biovis-report -c conda-forge -n biovis-report python=3.8 biovis-report biovis-media-extension
+conda create -c biovis-report -c conda-forge -n biovis-report python=3.8 biovis-report
 ```
 
 ### Activate the conda environment
@@ -28,7 +30,9 @@ conda activate biovis-report
 ### Install the plugins
 
 ```bash
-conda install -c biovis-report -c conda-forge biovis-base-plugins pie-chart-js lollipop-plot-r
+conda install -c biovis-report -c conda-forge biovis-rbased-plugins
+conda install -c biovis-report -c conda-forge biovis-pybased-plugins
+conda install -c biovis-report -c conda-forge biovis-jsbased-plugins
 ```
 
 ### Test whether the biovis-report is working.
@@ -40,8 +44,7 @@ biovis-report --help
 ### Launch the biovis-report development server
 
 ```bash
-mkdir output
-biovis-report report -p ./output -t ./example -e -f --theme biovis_mkdocs --dev-addr 0.0.0.0:8023
+biovis-report report -p ./ -t ./example -e -f --theme biovis_mkdocs --dev-addr 0.0.0.0:8023
 ```
 
 ## Step3: Open your chrome browser and access the [http://localhost:8023](http://localhost:8023)
